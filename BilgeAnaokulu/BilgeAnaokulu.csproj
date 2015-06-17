@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{43578254-DF9B-4A2E-9965-1B98C17A7B52}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BilgeAnaokulu</RootNamespace>
+    <AssemblyName>BilgeAnaokulu</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.3.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MetroModernUI.1.3.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\packages\MetroModernUI.1.3.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.3.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MetroModernUI.1.3.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCRUD.Designer.cs">
+      <DependentUpon>frmCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRaporlama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRaporlama.Designer.cs">
+      <DependentUpon>frmRaporlama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSinav.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSinav.Designer.cs">
+      <DependentUpon>frmSinav.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserController\ICRUDuc.cs" />
+    <Compile Include="UserController\SinavGoster\ucSecenekGoster.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserController\SinavGoster\ucSecenekGoster.Designer.cs">
+      <DependentUpon>ucSecenekGoster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserController\SinavGoster\ucSinavGoster.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserController\SinavGoster\ucSinavGoster.Designer.cs">
+      <DependentUpon>ucSinavGoster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserController\SinavGoster\ucSoruGoster.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserController\SinavGoster\ucSoruGoster.Designer.cs">
+      <DependentUpon>ucSoruGoster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserController\ucDers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserController\ucDers.Designer.cs">
+      <DependentUpon>ucDers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserController\ucEgitmen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserController\ucEgitmen.Designer.cs">
+      <DependentUpon>ucEgitmen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserController\ucOgrenci.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserController\ucOgrenci.Designer.cs">
+      <DependentUpon>ucOgrenci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserController\ucSecenek.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserController\ucSecenek.Designer.cs">
+      <DependentUpon>ucSecenek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserController\ucSinav.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserController\ucSinav.Designer.cs">
+      <DependentUpon>ucSinav.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserController\ucSinif.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserController\ucSinif.Designer.cs">
+      <DependentUpon>ucSinif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserController\ucSoru.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserController\ucSoru.Designer.cs">
+      <DependentUpon>ucSoru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserController\ucYoklama.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserController\ucYoklama.Designer.cs">
+      <DependentUpon>ucYoklama.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmCRUD.resx">
+      <DependentUpon>frmCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRaporlama.resx">
+      <DependentUpon>frmRaporlama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSinav.resx">
+      <DependentUpon>frmSinav.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Raporlar\rpOgrenci.rdlc" />
+    <EmbeddedResource Include="UserController\SinavGoster\ucSecenekGoster.resx">
+      <DependentUpon>ucSecenekGoster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserController\SinavGoster\ucSinavGoster.resx">
+      <DependentUpon>ucSinavGoster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserController\SinavGoster\ucSoruGoster.resx">
+      <DependentUpon>ucSoruGoster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserController\ucDers.resx">
+      <DependentUpon>ucDers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserController\ucEgitmen.resx">
+      <DependentUpon>ucEgitmen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserController\ucOgrenci.resx">
+      <DependentUpon>ucOgrenci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserController\ucSecenek.resx">
+      <DependentUpon>ucSecenek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserController\ucSinav.resx">
+      <DependentUpon>ucSinav.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserController\ucSinif.resx">
+      <DependentUpon>ucSinif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserController\ucSoru.resx">
+      <DependentUpon>ucSoru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserController\ucYoklama.resx">
+      <DependentUpon>ucYoklama.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\BAEntity.Ogrenci.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BAEntity\BAEntity.csproj">
+      <Project>{9ce7ce71-f5d4-4335-b9c6-42448878533b}</Project>
+      <Name>BAEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BAProcess\BAProcess.csproj">
+      <Project>{fe7ee1ef-8e77-4032-98d2-6a1c4180d654}</Project>
+      <Name>BAProcess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

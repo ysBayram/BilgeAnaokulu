@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgeAnaokulu", "BilgeAnaokulu\BilgeAnaokulu.csproj", "{43578254-DF9B-4A2E-9965-1B98C17A7B52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAEntity", "BAEntity\BAEntity.csproj", "{9CE7CE71-F5D4-4335-B9C6-42448878533B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAProcess", "BAProcess\BAProcess.csproj", "{FE7EE1EF-8E77-4032-98D2-6A1C4180D654}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAProvider", "BAProvider\BAProvider.csproj", "{13EB4195-E0B2-4C0C-A5E0-A2D26842C104}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://e2yavuzselim.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BilgeAnaokulu\\BilgeAnaokulu.csproj
+		SccProjectName1 = BilgeAnaokulu
+		SccLocalPath1 = BilgeAnaokulu
+		SccProjectUniqueName2 = BAEntity\\BAEntity.csproj
+		SccProjectName2 = BAEntity
+		SccLocalPath2 = BAEntity
+		SccProjectUniqueName3 = BAProcess\\BAProcess.csproj
+		SccProjectName3 = BAProcess
+		SccLocalPath3 = BAProcess
+		SccProjectUniqueName4 = BAProvider\\BAProvider.csproj
+		SccProjectName4 = BAProvider
+		SccLocalPath4 = BAProvider
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43578254-DF9B-4A2E-9965-1B98C17A7B52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43578254-DF9B-4A2E-9965-1B98C17A7B52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43578254-DF9B-4A2E-9965-1B98C17A7B52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43578254-DF9B-4A2E-9965-1B98C17A7B52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CE7CE71-F5D4-4335-B9C6-42448878533B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CE7CE71-F5D4-4335-B9C6-42448878533B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CE7CE71-F5D4-4335-B9C6-42448878533B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CE7CE71-F5D4-4335-B9C6-42448878533B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE7EE1EF-8E77-4032-98D2-6A1C4180D654}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE7EE1EF-8E77-4032-98D2-6A1C4180D654}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE7EE1EF-8E77-4032-98D2-6A1C4180D654}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE7EE1EF-8E77-4032-98D2-6A1C4180D654}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13EB4195-E0B2-4C0C-A5E0-A2D26842C104}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13EB4195-E0B2-4C0C-A5E0-A2D26842C104}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13EB4195-E0B2-4C0C-A5E0-A2D26842C104}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13EB4195-E0B2-4C0C-A5E0-A2D26842C104}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
